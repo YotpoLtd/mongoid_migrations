@@ -16,7 +16,7 @@ module Mongoid
 
     def setup
       Mongoid::Migration.verbose = true
-      # same as db:drop command in lib/mongoid_rails_migrations/mongoid_ext/railties/database.rake
+      # same as db:drop command in lib/mongoid_migrations/mongoid_ext/railties/database.rake
       if Mongoid.respond_to?(:default_client)
         Mongoid.default_client.database.drop
       else

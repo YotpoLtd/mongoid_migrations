@@ -27,8 +27,8 @@ end
 
 ActiveSupport.test_order = :sorted if ActiveSupport.respond_to?(:test_order)
 
-module TestMongoidRailsMigrations
+module TestMongoidMigrations
   class Application < Rails::Application; end
 end
 
-TestMongoidRailsMigrations::Application.load_tasks
+TestMongoidMigrations::Application.load_tasks

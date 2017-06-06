@@ -1,5 +1,5 @@
 source "http://rubygems.org"
-gemspec :name => 'mongoid_rails_migrations'
+gemspec :name => 'mongoid_migrations'
 
 group :test do
   gem 'minitest'

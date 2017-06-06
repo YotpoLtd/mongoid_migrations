@@ -10,7 +10,7 @@ if defined?(Rails::Railtie)
           config.generators.orm :mongoid, :migration => true
         end
         rake_tasks do
-          load "mongoid_rails_migrations/mongoid_ext/railties/database.rake"
+          load "mongoid_migrations/mongoid_ext/railties/database.rake"
         end
       end
     end

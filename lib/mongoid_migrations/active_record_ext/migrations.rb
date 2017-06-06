@@ -103,7 +103,9 @@ module Mongoid #:nodoc
 
           case sym
             when :up, :down
-              singleton_class.send(:alias_method_chain, sym, "benchmarks")
+              # singleton_class.send(:alias_method_chain, sym, "benchmarks")
+              singleton_class.send(:alias_method, "#{sym}_without_benchmarks", sym)
+              singleton_class.send(:alias_method, sym, "#{sym}_with_benchmarks")
           end
         ensure
           @ignore_new_methods = false

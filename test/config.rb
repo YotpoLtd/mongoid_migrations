@@ -1,5 +1,5 @@
-require File.join(File.dirname(__FILE__), '..', 'lib', 'mongoid_rails_migrations')
-require File.join(File.dirname(__FILE__), '..', 'lib', 'rails', 'generators', 'mongoid', 'mongoid_generator')
+require File.join(File.dirname(__FILE__), '..', 'lib', 'mongoid_migrations')
+require File.join(File.dirname(__FILE__), '..', 'lib', 'generators', 'mongoid', 'mongoid_generator')
 
 Mongoid.configure.connect_to('mongoid_test')
 

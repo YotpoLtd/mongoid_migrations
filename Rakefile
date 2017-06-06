@@ -4,7 +4,7 @@ task :default => ['test:mongoid:migrations']
 
 namespace :test do
   namespace :mongoid do
-    desc "Test mongoid rails migrations"
+    desc "Test mongoid migrations"
     task :migrations do
       load 'test/migration_test.rb'
     end

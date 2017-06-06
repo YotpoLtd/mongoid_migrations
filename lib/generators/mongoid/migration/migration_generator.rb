@@ -1,4 +1,4 @@
-require 'rails/generators/mongoid/mongoid_generator'
+require 'generators/mongoid/mongoid_generator'
 
 module Mongoid
   module Generators
