@@ -8,6 +8,4 @@ $:.unshift(File.dirname(__FILE__)) unless
 
 require 'mongoid_migrations/version'
 require 'mongoid_migrations/models/data_migration'
-require 'mongoid_migrations/mongoid_ext/mongoid'
-require 'mongoid_migrations/mongoid_ext/railtie'
 require 'mongoid_migrations/active_record_ext/migrations'

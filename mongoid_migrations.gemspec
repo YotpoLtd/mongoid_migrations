@@ -23,7 +23,6 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency('bundler', '>= 1.0.0')
   s.add_runtime_dependency('mongoid', '>= 5.0.0')
-  s.add_runtime_dependency('railties',  '>= 4.2.0')
   s.add_runtime_dependency('activesupport',  '>= 4.2.0')
   s.add_development_dependency 'rake'
 end

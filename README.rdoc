@@ -1,7 +1,5 @@
 == RELEASE NOTES
-* The most current release, 1.1.x, targets Mongoid >= 4.0.0 and Rails >= 4.2.0 .
-* For Rails >= 3.2.0 and Mongoid >= 3.0.0, use version 1.0.0 .
-* For Rails >= 3.0.0 (but < 3.2.0) and Mongoid >= 2.0.0, use version 0.0.14 .
+* The most current release, 1.0.x, targets Mongoid >= 5.0.0 .
 
 == SYNOPSIS
 * Data migrations for Mongoid.
@@ -10,14 +8,11 @@
 * The migrating is good
 
 == INSTALL
-* gem install mongoid_rails_migrations
+* gem install mongoid_migrations
 * In your Gemfile, include (after including mongoid):
-  gem "mongoid_rails_migrations", <version>
+  gem "mongoid_migrations", <version>
 
 == FEATURES AND HOW TO USE
-* generator:
-  * rails generate mongoid:migration your_migration_name_here
-
 * migrations:
   * db:migrate
   * db:migrate:down
@@ -32,6 +27,7 @@
 ```rake test:mongoid:migrations```
 
 == CREDITS TO
+  * mongoid_rails_migrations
   * rails
   * mongoid
   * contributions from the community (git log)

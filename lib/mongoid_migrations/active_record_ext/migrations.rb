@@ -46,7 +46,7 @@ module Mongoid #:nodoc
   #
   # == Timestamped Migrations
   #
-  # By default, Rails generates migrations that look like:
+  # By default, generates migrations that look like:
   #
   #    20080717013526_your_migration_name.rb
   #
@@ -301,7 +301,7 @@ module Mongoid #:nodoc
       runnable.pop if down? && !target.nil?
 
       runnable.each do |migration|
-        Rails.logger.info "Migrating to #{migration.name} (#{migration.version})" if Rails.logger
+        # puts "Migrating to #{migration.name} (#{migration.version})"
 
         # On our way up, we skip migrating the ones we've already migrated
         next if up? && migrated.include?(migration.version.to_i)
