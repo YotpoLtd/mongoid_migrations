@@ -4,9 +4,9 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.name        = 'mongoid_migrations'
   s.version     = MongoidMigrations::VERSION
-  s.summary     = 'Data migrations for Mongoid in Active Record style, minus column input.'
+  s.summary     = 'Data migrations for Rack applications with Mongoid'
   s.license     = 'MIT'
-  s.description = 'Migrations for the migrator.'
+  s.description = 'Migrations for Mongoid'
 
   s.required_ruby_version     = '>= 1.8.6'
   s.required_rubygems_version = '>= 1.3.6'

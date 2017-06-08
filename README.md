@@ -1,27 +1,32 @@
-== RELEASE NOTES
+### RELEASE NOTES
 * The most current release, 1.0.x, targets Mongoid >= 5.0.0 .
 
-== SYNOPSIS
-* Data migrations for Mongoid.
+### SYNOPSIS
+* Data migrations for Rack application with Mongoid.
+* No need for Rails, works great with Grape or any other Rack application.
 
-== MIGRATE WHEN ...
-* The migrating is good
+### INSTALL
 
-== INSTALL
-* gem install mongoid_migrations
+`gem install mongoid_migrations`
+
 * In your Gemfile, include (after including mongoid):
-  gem "mongoid_migrations", <version>
+
+`gem 'mongoid_migrations'`
 
 * To add rake tasks, in Rakefile:
-  require 'mongoid_migrations/tasks'
 
-== USAGE
-  * generate migration file:
-  NAME="migration" rake db:migrate:create
-  * Write your migration and run it with:
-  rake db:migrate
+`require 'mongoid_migrations/tasks'`
 
-== FEATURES AND HOW TO USE
+### USAGE
+* generate migration file:
+
+`NAME="migration" rake db:migrate:create`
+
+* Write your migration and run it with:
+
+`rake db:migrate`
+
+### FEATURES AND HOW TO USE
 * migrations:
   * db:migrate
   * db:migrate:create
@@ -33,19 +38,20 @@
   * db:reseed (handled by mongoid)
   * db:version
 
-== TESTING
-```rake test:mongoid:migrations```
+### TESTING
 
-== CREDITS TO
-  * mongoid_rails_migrations
-  * rails
-  * mongoid
-  * contributions from the community (git log)
+`rake test:mongoid:migrations`
+
+### CREDITS TO
+* mongoid_rails_migrations
+* rails
+* mongoid
+* contributions from the community (git log)
 
 Much of this gem simply modifies existing code from both projects.
 With that out of the way, on to the license.
 
-== LICENSE (MIT)
+### LICENSE (MIT)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'),
 to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish,
