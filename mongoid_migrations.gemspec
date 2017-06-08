@@ -11,9 +11,9 @@ Gem::Specification.new do |s|
   s.required_ruby_version     = '>= 1.8.6'
   s.required_rubygems_version = '>= 1.3.6'
 
-  s.author            = 'Alan Da Costa'
-  s.email             = 'alandacosta@gmail.com'
-  s.date              = %q{2017-01-01}
+  s.author            = 'Nimrod Popper'
+  s.email             = 'nimrod@yotpo.com'
+  s.date              = %q{2017-06-06}
   s.homepage          = 'https://github.com/YotpoLtd/mongoid_migrations'
 
   s.require_paths = ['lib']
