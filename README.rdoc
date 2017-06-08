@@ -12,9 +12,19 @@
 * In your Gemfile, include (after including mongoid):
   gem "mongoid_migrations", <version>
 
+* To add rake tasks, in Rakefile:
+  require 'mongoid_migrations/tasks'
+
+== USAGE
+  * generate migration file:
+  NAME="migration" rake db:migrate:create
+  * Write your migration and run it with:
+  rake db:migrate
+
 == FEATURES AND HOW TO USE
 * migrations:
   * db:migrate
+  * db:migrate:create
   * db:migrate:down
   * db:migrate:up
   * db:rollback

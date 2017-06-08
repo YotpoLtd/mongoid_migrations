@@ -221,6 +221,17 @@ module Mongoid #:nodoc
         'db/migrate'
       end
 
+      def generate(migration_name)
+        file_name = "#{Time.now.utc.strftime("%Y%m%d%H%M%S")}_#{migration_name.underscore}.rb"
+
+        File.open("#{migrations_path}/#{file_name}", 'w') do |f|
+          f << "class #{migration_name.camelize} < Mongoid::Migration\n"
+          f << "  def self.up\n  end\n\n"
+          f << "  def self.down\n  end\n"
+          f << "end\n"
+        end
+      end
+
       # def schema_migrations_table_name
       #   # Base.table_name_prefix + 'schema_migrations' + Base.table_name_suffix
       #   'data_migrations'

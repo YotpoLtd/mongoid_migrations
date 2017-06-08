@@ -1,3 +1,6 @@
+# require 'mongoid_migrations/tasks'
+# will give you the resque tasks
+
 namespace :db do
   unless Rake::Task.task_defined?("db:drop")
     desc 'Drops all the collections for the database for the current env'
@@ -70,6 +73,12 @@ namespace :db do
       version = ENV["VERSION"] ? ENV["VERSION"].to_i : nil
       raise "VERSION is required" unless version
       Mongoid::Migrator.run(:down, "db/migrate/", version)
+    end
+
+    desc 'Create a migration file for given migration NAME'
+    task :create do
+      migration_name = ENV["NAME"] || 'migration'
+      Mongoid::Migrator.generate(migration_name)
     end
   end
 
